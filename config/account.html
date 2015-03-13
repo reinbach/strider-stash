@@ -1,0 +1,34 @@
+<div class="control-group stash-api-url">
+  <label class="control-label">API URL</label>
+</div>
+<div class="controls">
+  <input type="text" ng-model="config.stash_api_url"
+         placeholder="http://localhost:7990">
+  <span class="help-inline stash-api-url"></span>
+  <span class="ng-hide"></span>
+</div>
+<div class="control-group token">
+  <label type="text" class="control-label">
+    Consumer Key
+    (<a href="https://confluence.atlassian.com/display/STASH/Stash+Documentation+Home" target="_blank">?</a>)
+  </label>
+</div>
+<div class="controls">
+  <input type="text" ng-model="config.stash_consumer_key"
+         placeholder="Consumer Key">
+</div>
+<div class="control-group stash-pem-file">
+  <label class="control-label">
+    PEM File Path
+    (<a href="https://github.com/reinbach/passport-stash/tree/master/examples/login#setup-keys" target="_blank">?</a>)
+  </label>
+</div>
+<div class="controls">
+  <input type="text" ng-model="config.stash_pem_file"
+         placeholder="/path/to/pem/file">
+  <span class="help-inline stash-pem-file"></span>
+  <span class="ng-hide"></span>
+</div>
+<div class="actions">
+  <button class="btn" ng-click="save()">Save</button>
+</div>

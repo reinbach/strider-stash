@@ -1,0 +1,57 @@
+{
+  "name": "strider-stash",
+  "version": "0.1.0",
+  "description": "An Atlassian Stash provider for strider",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run lint && npm run tests",
+    "lint": "jshint --verbose lib/",
+    "tests": "mocha -R spec test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reinbach/strider-stash.git"
+  },
+  "keywords": [
+    "git",
+    "strider"
+  ],
+  "author": "Greg Reinbach <greg@reinbach.com>",
+  "license": "MIT",
+  "readmeFilename": "Readme.md",
+  "strider": {
+    "id": "stash",
+    "title": "Stash",
+    "type": "provider",
+    "hosted": true,
+    "config": {
+      "controller": "StashCtrl"
+    },
+    "accountConfig": {
+      "template": "config/account.html"
+    },
+    "webapp": "lib/webapp.js",
+    "worker": "lib/worker.js",
+    "inline_icon": "stash"
+  },
+  "devDependencies": {
+    "jshint": "~2.1.11",
+    "expect.js": "~0.2.0",
+    "mocha": "~1.13.0"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "crypto": "0.0.3",
+    "debug": "~0.7.3",
+    "gravatar": "~1.0.6",
+    "lodash": "^2.2.1",
+    "passport": "~0.1.17",
+    "passport-stash": "^0.1.0",
+    "request": "~2.27.0",
+    "scmp": "0.0.2",
+    "ssh-keypair": "~1.0.0",
+    "step": "0.0.5",
+    "strider-git": "~0.2.0",
+    "superagent": "~0.15.4"
+  }
+}
