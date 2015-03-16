@@ -7,13 +7,13 @@ setup of your projects. It registers webhooks and sets up ssh keys
 
 ## Setup
 
-Your Stash instance will need have an [Application Link](https://confluence.atlassian.com/display/STASH/Stash+Documentation+Home) setup. You will also need to [create certificates](https://github.com/reinbach/passport-stash/tree/master/examples/login#setup-keys) to authenticate with.
+Your Stash instance will need have an [Application Link](https://confluence.atlassian.com/display/STASH/Stash+Documentation+Home) setup. You will also need to [create certificates](https://github.com/reinbach/passport-stash/tree/master/examples/login#setup-keys) to authenticate with Stash.
 
-The following information will be needed when setting up Stash on Strider-CD;
+Setup the following environment variables;
 
-  - API URL to Stash instance. Generally ends in `http://<stash.domain.com>:7990`
-  - `Consumer Key`
-  - `PEM File location
+    $ export STASH_API_URL=http://localhost:7990
+    $ export STASH_CONSUMER_KEY=<consumer-key>
+    $ export STASH_PEM_FILE=</path/to/pem/file>
 
 ## Credits
 
