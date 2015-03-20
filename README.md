@@ -1,9 +1,16 @@
 strider-stash
 ==============
 
+[![NPM](https://nodei.co/npm/strider-stash.png)](https://nodei.co/npm/strider-stash/)
+
 A provider for strider that integrates with Atlassian Stash to provide easy
 setup of your projects. It registers webhooks and sets up ssh keys
 (if you so choose).
+
+## Requirements
+
+   * Strider-CD >= 1.6.4
+   * Stash >= 3.5
 
 ## Setup
 
@@ -11,9 +18,9 @@ setup of your projects. It registers webhooks and sets up ssh keys
 
 The following will need to be done on your Stash instance;
 
-   * [create certificates](https://github.com/reinbach/passport-stash/tree/master/examples/login#setup-keys) to authenticate with Stash.
+   * [Create certificates](https://github.com/reinbach/passport-stash/tree/master/examples/login#setup-keys) to authenticate with Stash.
    * [Application Link](https://confluence.atlassian.com/display/STASH/Stash+Documentation+Home) setup.
-   * Install `HTTP Request Post-Receive Hook for Stash` add on
+   * Install `HTTP Request Post-Receive Hook for Stash` add-on
 
 ### Environment Variables
 
