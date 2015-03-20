@@ -1,6 +1,6 @@
 {
   "name": "strider-stash",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An Atlassian Stash provider for strider",
   "repository": {
     "type": "git",
